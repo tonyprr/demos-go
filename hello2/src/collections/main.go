@@ -24,6 +24,13 @@ func main() {
 	// Encontrar un valor
 	value, ok := m["Jose"]
 	fmt.Println(value, ok)
+
+	graduados := make(map[int][]string)
+	graduados[2020] = []string{"Juan", "Marcos"}
+	graduados[2021] = []string{"Jose", "Antonio", "Mario"}
+	fmt.Println(graduados[2021])
+	fmt.Printf("2, %T", 2)
+
 }
 
 func basicArrayAndSlice() {
